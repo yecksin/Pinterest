@@ -19,7 +19,14 @@
 
 
 
-
+window.onresize = function () {
+  console.log("Hola mundo");
+  if(window.innerWidth > 600){
+    document.getElementById("footer").style.top = "120%";
+  }else{
+    document.getElementById("footer").style.top = "100%";
+  }
+}
     
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
