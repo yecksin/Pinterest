@@ -1,0 +1,15 @@
+h1,h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'PoppinsSemi', sans-serif;
+    
+}
+
+.imagen{
+    display: inline-block;
+    background-color: aqua;
+    width: 30vw;
+    
+}
