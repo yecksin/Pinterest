@@ -1,5 +1,43 @@
+.categorias h1{
+    padding: 8px;
+    border-radius: 50px;
+    margin: 0;
+    display: inline-block;
+    font-size: 12px;
+    /* background-color: gray; */
+    /* margin: 10px auto; */
+    overflow:hidden !important;
+}
+.blackBtn{
+    background-color: black ;
+    color: white;
+}
 
+.categorias {
+    display: flex !important;
+    align-items: center !important;
+   
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    margin-left: 5px;
+    text-overflow: clip;
+    overflow:hidden !important;
+    /* overflow-y: auto !important; */
+}
+.contenedorbarrainf{
+    display: none;
+    position: absolute;
+    top: 99%;
+    background-color: white;
+    /* border: black solid 2px; */
+    height: 40px;
+    width: 100%;
+    overflow:hidden !important;
+    /* overflow-y: auto; */
+}
 .barra{
+    z-index: 1000 !important;
+    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +47,19 @@
     position: fixed;
     top: 0;
 }
+
+/* .contenedorbarrasup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    border: yellow solid 1px;
+    position: fixed;
+    top: 0;
+} */
+
+
 .titulo1,.titulo2,.titulo3, .buscador, .icono{
     display: inline-block;
     padding: 0;
@@ -155,11 +206,25 @@ h3{
     cursor: pointer;
 }
 .pinterest{
-    fill: rgb(230, 0, 35);;
+    fill: rgb(230, 0, 35);
 }
 
 
 .categorias{
     display: block !important;
     width: 100%;
+}
+
+body::-webkit-scrollbar{
+    width: 10px !important;
+    background-color: none !important;
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 7px !important;
+    background-color: rgb(94, 94, 94) !important;
+    border-radius: 3px;
+    border-right: white solid 2px;
+    border-left: white solid 2px;
+    transition: all .3s ease;
 }
